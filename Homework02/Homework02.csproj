@@ -6,4 +6,11 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="CheckOrder - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>CheckOrder.xaml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>

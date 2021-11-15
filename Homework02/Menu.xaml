@@ -1,0 +1,15 @@
+﻿<Window x:Class="Homework02.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework02"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="txtMenuMsg" HorizontalAlignment="Center" Margin="0,133,0,0" Text="What do you want to do?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="btnAddTicket" Content="Add new ticket" HorizontalAlignment="Left" Margin="115,312,0,0" VerticalAlignment="Top" Height="53" Width="113" Click="btnAddTicket_Click"/>
+        <Button x:Name="btnCloseOrder" Content="Close Order" HorizontalAlignment="Left" Margin="574,312,0,0" VerticalAlignment="Top" Height="53" Width="113"/>
+        <Button x:Name="btnCheckOrder" Content="Check Order" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Height="53" Width="112" Click="btnCheckOrder_Click"/>
+    </Grid>
+</Window>

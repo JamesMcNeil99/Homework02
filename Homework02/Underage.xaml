@@ -1,0 +1,14 @@
+﻿<Window x:Class="Homework02.Underage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Homework02"
+        mc:Ignorable="d"
+        Title="Underage" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="txtUnderage" HorizontalAlignment="Center" Text="Children can't go to R rated movies!" TextWrapping="Wrap" VerticalAlignment="Center" Height="122" Width="602" FontSize="36"/>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" Height="55" Width="146" Click="btnOK_Click"/>
+
+    </Grid>
+</Window>

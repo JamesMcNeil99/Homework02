@@ -17,20 +17,38 @@ namespace Homework02
     /// </summary>
     public partial class Genre : Window
     {
-        public Genre()
+        Model model;
+        public Genre(Model model)
         {
+            this.model = model;
             InitializeComponent();
             addGenresToList();
+            btnOK.Click += BtnOK_Click;
         }
-        public void addGenresToList()
+
+        private void BtnOK_Click(object sender, RoutedEventArgs e)
         {
-            cmbGenre.Text = "Choose movie genre";
-            List<string> genres = new List<string>();
-            genres.Add("ACTION");
-            genres.Add("COMEDY");
-            genres.Add("ROMANCE");
-            genres.Add("DOCUMENTARY");
-            cmbGenre.ItemsSource = genres;
+            if (cmbGenre.SelectedIndex > -1)
+            {
+                model.UserGenre = cmbGenre.SelectedItem.ToString();
+                Rating r = new Rating(model);
+                r.Show();
+                this.Close();
+            }
         }
+
+        void addGenresToList()
+        {
+            cmbGenre.Text = "Select movie genre";
+            cmbGenre.ItemsSource = model.Genres;
+            
+        }
+
+        private void Cancel(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+
     }
 }

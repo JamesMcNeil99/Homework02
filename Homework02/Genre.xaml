@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Genre" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="cmbGenre" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="228" Height="39"/>
-        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="101,313,0,0" VerticalAlignment="Top" Height="57" Width="114"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="577,313,0,0" VerticalAlignment="Top" Height="57" Width="114"/>
+        <ComboBox x:Name="cmbGenre" HorizontalAlignment="Center" Margin="0,137,0,0" VerticalAlignment="Top" Width="228" Height="39" FontSize="24" IsEditable="True" />
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="101,280,0,0" VerticalAlignment="Top" Height="57" Width="114"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="580,280,0,0" VerticalAlignment="Top" Height="57" Width="114" Click="Cancel"/>
 
     </Grid>
 </Window>

@@ -9,7 +9,7 @@
     <Grid>
         <Image x:Name="SFA_Logo" HorizontalAlignment="Center" Height="178" Margin="0,42,0,0" VerticalAlignment="Top" Width="178" Source="https://www.sfasu.edu/themes/custom/sfa/css/images/logo.png"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,256,0,0" Text="Welcome to the SFASU Theatre" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="40" FontWeight="Bold"/>
-        <Button x:Name="btnOK" Content="Ok" HorizontalAlignment="Center" Margin="0,353,0,0" VerticalAlignment="Top" Height="54" Width="128" Click="Open_Next"/>
+        <Button x:Name="btnOK" Content="Ok" HorizontalAlignment="Center" Margin="0,332,0,0" VerticalAlignment="Top" Height="54" Width="128" Click="Open_Next"/>
 
     </Grid>
 </Window>
