@@ -27,6 +27,8 @@ namespace Homework02
             Tax = 0.07;
         }
 
+
+        //Creates list of genres to be used by the Genre page
         List<string> createGenreList()
         {
             List<string> genres = new List<string>();
@@ -36,6 +38,8 @@ namespace Homework02
             genres.Add("DOCUMENTARY");
             return genres;
         }
+
+        //Creates list of ratings to be used by the ratings page
         List<string> createRatingsList()
         {
             List<string> ratings = new List<string>();
@@ -57,6 +61,8 @@ namespace Homework02
 
             return priceList;
         }
+
+        //creates list of prices to be used for price calculations 
         Dictionary<string, double> createPrices()
         {
             Dictionary<string, double> price = new Dictionary<string, double>();
@@ -67,15 +73,15 @@ namespace Homework02
             price.Add("Seniors", 5.00);      
             return price;
         }
+        //Adds a ticket of the corresponding type selected in the combobox 
         public void addTicket(string type)
         {
             type = type.Split(",")[0];
 
-       
-
             Tickets[type] += 1;
         }
 
+        //Creates dictionary to be used for tracking number of tickets per type selected
         Dictionary<string, int> createTickets()
         {
             Dictionary<string, int> tickets = new Dictionary<string, int>();
@@ -87,6 +93,7 @@ namespace Homework02
 
             return tickets;
         }
+
         public int getTicketCount(string type)
         {
             return Tickets[type];
