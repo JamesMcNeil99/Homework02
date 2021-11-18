@@ -18,9 +18,13 @@ namespace Homework02
     public partial class Menu : Window
     {
         Model model;
+        PlaceOrder placeOrder; 
+        CheckOrder checkOrder;
         public Menu(Model model)
         {
             this.model = model;
+            placeOrder = new PlaceOrder(model, this);
+            checkOrder = new CheckOrder(model, this);
             InitializeComponent();
             btnCloseOrder.Click += BtnCloseOrder_Click;
         }
@@ -29,30 +33,31 @@ namespace Homework02
         {
             if (model.getTotalTickets() == 0)
             {
-                NoTickets t = new NoTickets(model);
+                NoTickets t = new NoTickets(model, this);
                 t.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {
                 Delivery d = new Delivery(model);
                 d.Show();
                 this.Close();
+                placeOrder.Close();
+                checkOrder.Close();
             }
         }
 
         private void btnAddTicket_Click(object sender, RoutedEventArgs e)
         {
-            PlaceOrder o = new PlaceOrder(model);
-            o.Show();
-            this.Close();
+            
+            placeOrder.Show();
+            this.Hide();
         }
 
         private void btnCheckOrder_Click(object sender, RoutedEventArgs e)
         {
-            CheckOrder c = new CheckOrder(model);
-            c.Show();
-            this.Close();
+            checkOrder.Show();
+            this.Hide();
         }
     }
 }

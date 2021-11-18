@@ -18,18 +18,25 @@ namespace Homework02
     public partial class CheckOrder : Window
     {
         Model model;
-        public CheckOrder(Model model)
+        Menu menu;
+        public CheckOrder(Model model, Menu menu)
         {
+            this.menu = menu;
             this.model = model;
             InitializeComponent();
+            checkOrderValues();
+            this.IsVisibleChanged += CheckOrder_IsVisibleChanged;
+        }
+
+        private void CheckOrder_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
             checkOrderValues();
         }
 
         private void btnOK_Click(object sender, RoutedEventArgs e)
-        {
-            Menu m = new Menu(model);
-            m.Show();
-            this.Close();
+        {     
+            menu.Show();
+            this.Hide();
         }
 
         private void checkOrderValues()

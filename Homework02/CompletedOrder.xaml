@@ -8,7 +8,7 @@
         Title="CompletedOrder" Height="574" Width="318">
     <Grid Margin="-104,0,10,-53">
         <Grid Margin="116,24,0,57">
-            <TextBlock x:Name="txtCurrentOrder" HorizontalAlignment="Left" Text="TextBlock" TextWrapping="NoWrap" VerticalAlignment="Top" Width="190" FontSize="15" RenderTransformOrigin="0.411,0.449"/>
+            <TextBlock x:Name="txtCurrentOrder" HorizontalAlignment="Left" Text="TextBlock" TextWrapping="NoWrap" VerticalAlignment="Top" Width="286" FontSize="15" RenderTransformOrigin="0.411,0.449"/>
             <TextBlock x:Name="txtChildren" Margin="0,67,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
             <TextBlock x:Name="txtStudent" Margin="0,98,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
             <TextBlock x:Name="txtAdult" Margin="0,130,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>

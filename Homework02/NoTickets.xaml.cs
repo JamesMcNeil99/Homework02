@@ -18,8 +18,10 @@ namespace Homework02
     public partial class NoTickets : Window
     {
         Model model;
-        public NoTickets(Model model)
+        Menu menu;
+        public NoTickets(Model model, Menu menu)
         {
+            this.menu = menu;
             this.model = model;
             InitializeComponent();
             btnCancel.Click += BtnCancel_Click;
@@ -27,14 +29,14 @@ namespace Homework02
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)
         {
-            Menu m = new Menu(model);
-            m.Show();
+            
+            menu.Show();
             this.Close();
         }
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
     }
 }

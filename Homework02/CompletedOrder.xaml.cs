@@ -24,6 +24,9 @@ namespace Homework02
             this.model = model;
             checkOrderValues();
         }
+
+
+
         private void checkOrderValues()
         {
             txtCurrentOrder.Text = $"Current Order: {model.UserGenre}({model.UserRating})";
@@ -44,7 +47,7 @@ namespace Homework02
 
         private void btnOK_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
     }
 }

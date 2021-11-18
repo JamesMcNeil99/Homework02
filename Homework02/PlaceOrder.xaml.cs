@@ -18,8 +18,10 @@ namespace Homework02
     public partial class PlaceOrder : Window
     {
         Model model;
-        public PlaceOrder(Model model)
+        Menu menu;
+        public PlaceOrder(Model model, Menu menu)
         {
+            this.menu = menu;
             this.model = model;
             InitializeComponent();
             cmbTicket.Text = "Choose ticket type.";
@@ -28,9 +30,9 @@ namespace Homework02
 
         private void ReturnToMenu(object sender, RoutedEventArgs e)
         {
-            Menu m = new Menu(model);
-            m.Show();
-            this.Close();
+           
+            menu.Show();
+            this.Hide();
         }
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
@@ -42,14 +44,13 @@ namespace Homework02
                 if(selection == "Children" && model.UserRating == "R"){
                     Underage u = new Underage(model);
                     u.Show();
-                    this.Close();
+                    this.Hide();
                 }
                 else
                 {
                     model.addTicket(selection);
-                    Menu m = new Menu(model);
-                    this.Close();
-                    m.Show();
+                    menu.Show();
+                    this.Hide();
                 }
             }
         }

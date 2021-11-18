@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CheckOrder" Height="525" Width="356">
     <Grid Margin="10,0,10,0">
-        <TextBlock x:Name="txtCurrentOrder" HorizontalAlignment="Left" Margin="0,10,0,0" Text="TextBlock" TextWrapping="NoWrap" VerticalAlignment="Top" Width="190" FontSize="15" RenderTransformOrigin="0.411,0.449"/>
+        <TextBlock x:Name="txtCurrentOrder" HorizontalAlignment="Left" Margin="0,10,0,0" Text="TextBlock" TextWrapping="NoWrap" VerticalAlignment="Top" Width="326" FontSize="15" RenderTransformOrigin="0.411,0.449"/>
         <TextBlock x:Name="txtChildren" Margin="0,67,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock x:Name="txtStudent" Margin="0,98,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock x:Name="txtAdult" Margin="0,130,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
