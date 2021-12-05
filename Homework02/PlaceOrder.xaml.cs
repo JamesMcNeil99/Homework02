@@ -42,7 +42,7 @@ namespace Homework02
                 string selection = cmbTicket.SelectedItem.ToString().Split(",")[0];
 
                 if(selection == "Children" && model.UserRating == "R"){
-                    Underage u = new Underage(model);
+                    Underage u = new Underage(model, menu);
                     u.Show();
                     this.Hide();
                 }

@@ -18,16 +18,18 @@ namespace Homework02
     public partial class Underage : Window
     {
         Model model;
-        public Underage(Model model)
+        Menu menu;
+        public Underage(Model model, Menu menu)
         {
+            this.menu = menu;
             this.model = model;
             InitializeComponent();
         }
 
         private void btnOK_Click(object sender, RoutedEventArgs e)
         {
-            Menu m = new Menu(model);
-            m.Show();
+            
+            menu.Show();
             this.Close();
         }
     }
